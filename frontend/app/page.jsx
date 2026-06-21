@@ -1,9 +1,5 @@
-import VendorManager from './features/vendor/VendorManager';
+import DashboardOverview from './features/dashboard/DashboardOverview';
 
 export default function Home() {
-  return (
-    <div className="max-w-7xl mx-auto">
-      <VendorManager />
-    </div>
-  );
+  return <DashboardOverview />;
 }

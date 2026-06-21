@@ -8,7 +8,8 @@ export default function Navbar() {
           Teyzix Vendor System
         </Link>
         <div className="space-x-6 font-medium">
-          <Link href="/" className="hover:text-blue-300 transition">Vendors</Link>
+          <Link href="/" className="hover:text-blue-300 transition">Dashboard</Link>
+          <Link href="/vendors" className="hover:text-blue-300 transition">Vendors</Link>
           <Link href="/quotations" className="hover:text-blue-300 transition">Quotations</Link>
         </div>
       </div>

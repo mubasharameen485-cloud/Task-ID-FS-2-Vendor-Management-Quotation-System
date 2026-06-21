@@ -11,6 +11,6 @@ const vendorSchema = new mongoose.Schema(
     { timestamps: true }
 );
 
-// FIX: Yahan 'User' ki jagah 'Vendor' aayega
+
 const Vendor = mongoose.model('Vendor', vendorSchema);
 export default Vendor;
