@@ -11,6 +11,10 @@ export default function Navbar() {
           <Link href="/" className="hover:text-blue-300 transition">Dashboard</Link>
           <Link href="/vendors" className="hover:text-blue-300 transition">Vendors</Link>
           <Link href="/quotations" className="hover:text-blue-300 transition">Quotations</Link>
+          
+          <Link href="/compare" className="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full transition shadow-lg shadow-blue-500/30">
+            Compare Quotes
+          </Link>
         </div>
       </div>
     </nav>

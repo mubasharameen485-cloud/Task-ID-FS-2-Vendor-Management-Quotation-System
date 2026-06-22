@@ -41,3 +41,16 @@ export const updateQuotationStatus = async (req, res) => {
         res.status(500).json({ success: false, message: 'Server Error' });
     }
 };  
+// Quotation Comparison: 
+export const compareQuotations = async (req, res) => {
+    try {
+        
+        const quotations = await Quotation.find()
+            .populate('vendor', 'vendorName companyName email contactNumber')
+            .sort({ quotationAmount: 1 }); 
+
+        res.status(200).json({ success: true, data: quotations });
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Server Error in comparison' });
+    }
+};
