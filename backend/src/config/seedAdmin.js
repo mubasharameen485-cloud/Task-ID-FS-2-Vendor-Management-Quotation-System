@@ -9,7 +9,7 @@ export const setupAdminAccount = async () => {
         const adminPassword = process.env.ADMIN_PASSWORD;
 
         if (!adminEmail || !adminPassword) {
-            console.log('⚠️ Admin credentials not found in .env');
+            console.log(' Admin credentials not found in .env');
             return;
         }
 

@@ -7,7 +7,7 @@ export const register = async (req, res) => {
     try {
         const { name, email, password, role } = req.body;
         
-        // SECURITY CHECK: Koi bahir se Admin role bhej kar register nahi ho sakta
+        
         if (role === 'ADMIN') {
             return res.status(403).json({ success: false, message: 'Security Alert: You cannot register as an Admin.' });
         }
@@ -21,7 +21,7 @@ export const register = async (req, res) => {
             name, 
             email, 
             password: hashedPassword, 
-            role: 'USER' // By default har naya banda USER hoga
+            role: 'USER' 
         });
 
         res.status(201).json({ 
