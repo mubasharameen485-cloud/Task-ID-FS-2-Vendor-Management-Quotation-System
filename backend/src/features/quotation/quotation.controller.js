@@ -1,5 +1,5 @@
 import Quotation from './quotation.model.js';
-
+import { sendEmailNotification } from '../../config/email.js'; 
 export const createQuotation = async (req, res) => {
     try {
         const { quotationTitle, description, vendor, quotationAmount } = req.body;
@@ -33,8 +33,20 @@ export const updateQuotationStatus = async (req, res) => {
         const { id } = req.params;
         const { status } = req.body;
 
-        const updated = await Quotation.findByIdAndUpdate(id, { status }, { new: true });
+        
+        const updated = await Quotation.findByIdAndUpdate(id, { status }, { new: true })
+                                       .populate('vendor', 'vendorName email');
+        
         if (!updated) return res.status(404).json({ success: false, message: 'Not found' });
+
+        
+        if (updated.vendor && updated.vendor.email) {
+            const subject = `Quotation Status Update: ${status}`;
+            const text = `Hello ${updated.vendor.vendorName},\n\nYour quotation for "${updated.quotationTitle}" has been reviewed.\n\nThe current status is: ${status.toUpperCase()}.\n\nThank you for working with us.\n\nRegards,\nTeyzix Vendor Management System`;
+            
+            
+            sendEmailNotification(updated.vendor.email, subject, text);
+        }
 
         res.status(200).json({ success: true, message: `Status updated to ${status}`, data: updated });
     } catch (error) {
