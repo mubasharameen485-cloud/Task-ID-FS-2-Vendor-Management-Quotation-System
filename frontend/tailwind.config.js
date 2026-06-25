@@ -1,11 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'class', // YEH SAB SE ZAROORI HAI DARK MODE KE LIYE
+  darkMode: 'class', // 👈 YEH SAB SE ZAROORI HAI
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/features/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // 👈 Yeh poore src folder ko cover kar lega
   ],
   theme: {
     extend: {},
