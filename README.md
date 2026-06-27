@@ -114,3 +114,11 @@ npm run dev
 4. Access the Application
 Open your browser and go to http://localhost:3000
 To access the Admin Dashboard, log in using the credentials provided in your backend .env file.
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-05-42" src="https://github.com/user-attachments/assets/b7d27d8d-c464-4455-bc71-8875941dc1c5" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-05-48" src="https://github.com/user-attachments/assets/6f5f8ff5-eaf9-4d1a-8f7b-4427f35f78f9" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-04" src="https://github.com/user-attachments/assets/8e8ef233-7539-4c92-b408-e1d5c58d6b15" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-11" src="https://github.com/user-attachments/assets/cd0f41b8-4c41-478f-856d-3d82f63d7f97" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-16" src="https://github.com/user-attachments/assets/29f0e4f8-fdb9-46c5-bbe8-41dc6ecdeda3" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-22" src="https://github.com/user-attachments/assets/d63add9d-528b-4d47-b16d-ab0a8f051cda" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-47" src="https://github.com/user-attachments/assets/4d1fc9ba-a968-40d2-8874-f5d4d41bc422" />
+<img width="1366" height="728" alt="Screenshot from 2026-06-27 09-06-54" src="https://github.com/user-attachments/assets/122e2410-ef99-4220-87c3-7dd1c65c5b7d" />
